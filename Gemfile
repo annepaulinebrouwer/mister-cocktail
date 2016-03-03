@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
+gem 'rails_12factor', group: :production
+gem 'puma',           group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -35,6 +38,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem "better_errors"
 end
 
 group :development do
