@@ -1,0 +1,6 @@
+
+<h2>This is the delicious cocktail that you created today!! Yeah!!!</h2>
+<p><%= @cocktail.name %></p>
+
+<%= link_to "All cocktails", cocktails_path, :class => "btn btn-success" %>
+<%= link_to "Add ingredient to cocktail", new_cocktail_dose_path(@cocktail), :class => "btn btn-success" %>

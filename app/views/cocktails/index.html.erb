@@ -1,0 +1,15 @@
+<h1>These are all the amazing cocktails</h1>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+  <li><%= cocktail.name %>
+   <%= link_to "info", cocktail_path(cocktail) %>
+   <% cocktail.ingredients.each do |ingredient| %>
+   <%= ingredient.name %>
+ </li>
+ <% end %>
+ <% end %>
+
+ <%= link_to "New Cocktail", new_cocktail_path, :class => "btn btn-success" %>
+
+</ul>
