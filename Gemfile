@@ -31,8 +31,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# gem to secure assets via figaro
+# gem to secure data that it is not exposed to GitHub Heroku via figaro, protecting with ENV.
 gem 'figaro'
+gem 'cloudinary'
+
+# Makes it possible for users to upload a picture on your website
+gem 'carrierwave'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
